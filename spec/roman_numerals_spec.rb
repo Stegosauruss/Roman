@@ -38,4 +38,24 @@ describe RomanNumerals do
   it "returns 'XI' when passed 11" do
     expect(romanNumerals.translate(11)).to eq("XI")
   end
+
+  it "returns 'XL' when passed 40" do
+    expect(romanNumerals.translate(40)).to eq("XL")
+  end
+
+  it "returns 'L' when passed 50" do
+    expect(romanNumerals.translate(50)).to eq("L")
+  end
+
+  it "returns 'XC' when passed 90" do
+    expect(romanNumerals.translate(90)).to eq("XC")
+  end
+
+  it "returns 'C' when passed 100" do
+    expect(romanNumerals.translate(100)).to eq("C")
+  end
+
+  it "returns 'CD' when passed 400" do
+    expect(romanNumerals.translate(400)).to eq("CD")
+  end
 end
